@@ -1,0 +1,29 @@
+<body>
+  <h4>Stock Prediction Application</h4>
+  <div class="search" >
+  <!--  <input type="search" name="" value="" placeholder="search  what you want!">
+    <button type="search" name="button" placeholder="search  what you want!" ></button>-->
+    <form class="example">
+    <!-- <button (click)="searchservice.getText()" type="button" name="button"> click me</button>
+      //<p>{{msg}}</p>-->
+  <input type="text" placeholder="Search.." name="search">
+  <button  type="button"> search </button>
+  <p>{{msg}}</p>
+</form>
+<!--<div class="" ng:repeat = "let com of this.searchservice.company | filter: searchText">
+  {{com.name}}
+</div>-->
+ </div>
+<h1 *ngFor="let com of this.searchservice.company">
+  {{com.name}}
+</h1>
+<h3 *ngFor="let veg of this.searchservice.vegitable">
+  {{veg.name}}
+</h3>
+<h6 *ngFor="let cur of this.searchservice.currancy">
+  {{cur.name}}
+</h6>
+
+
+
+</body>
